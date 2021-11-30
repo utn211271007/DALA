@@ -1,0 +1,42 @@
+<html style="background-color: #FF7812;">
+    <head>
+        <title>InicioAdmi</title>
+        <link href="../css/bulma.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" type="imagen/x-icon" href="../img/Logo_QWERTY.png">
+    </head>
+    <body>
+        <form id="form" name="form" method="POST" action="inicioAdmi.php">
+            <header>
+                <div align="center">
+                    <br><br>
+                    <h1 class ="title is-1">Inicio de Sesion</h1>
+                    <br><br>
+                </div>
+            </header>
+            <div align="center">
+                <table width="200" border="0">
+                    <tr>
+                        <td>Usuario:</td>
+                        <td><div align="center">
+                            <label for="txt_usuario"></label>
+                            <input class="input is-rounded is-small" type="text" name="txt_usuario" id="txt_usuario" />
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td>Contrasena:</td>
+                        <td><input class="input is-rounded is-small" type="password" name="pw_contrase" id="pw_contrase" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><span id="sprypassword1">
+                            <label for="pw_contraseña"></label>
+                            <span class="passwordRequiredMsg"></span></span>
+                            <div align="right"><br>
+                                    <input type="submit" class="button is-success is-rounded" name="btn" id="btn" value="Enviar" />
+                            </div></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

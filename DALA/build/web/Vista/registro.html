@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html style="background-color: #FF7812;" >
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Registro</title>
+    <link href="SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bulma.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="imagen/x-icon" href="../img/Logo_DALA.png">
+    </head>
+    <body>
+        <form id="form" name="form" action="registro.php" method="post"> 
+            <header>
+                <div align="center">
+                  <br><br>
+                  <h1 class ="title is-1" >Registro</h1>
+                  <br><br>
+                </div>
+              </header>
+          <div align="center">
+            <table width="460" border="0">
+              <tr>
+                <td>Nombre:</td>
+                <td><label for="txt_nombre"></label>
+                <input class="input is-rounded is-small" name="txt_nombre" type="text" id="txt_nombre" size="40"></td>
+              </tr>
+              <tr>
+                <td>Apellido Paterno:</td>
+                <td><label for="txt_apePat"></label>
+                <input class="input is-rounded is-small" name="txt_apePat" type="text" id="txt_apePat" size="40"></td>
+              </tr>
+              <tr>
+                  <td>Apellido Materno:</td>
+                  <td><label for="txt_apeMat"></label>
+                  <input class="input is-rounded is-small" name="txt_apeMat" type="text" id="txt_apeMat" size="40"></td>
+                </tr>
+              <tr>
+                <tr>
+                    <td>Correo Electronico:</td>
+                    <td><label for="txt_correo"></label>
+                    <input class="input is-rounded is-small" name="txt_correo" type="email" id="txt_correo" size="40"></td>
+                  </tr>
+                <tr>
+                <td>Contraseña:</td>
+                <td><span id="sprypassword1">
+                  <label for="pvs_password"></label>
+                  <input class="input is-rounded is-small" name="pvs_password1" type="password" id="pvs_password" size="40">
+              </tr>
+              <tr>
+                <td>Valida contraseña:</td>
+                <td><span id="sprypassword1">
+                  <label for="pvs_password"></label>
+                  <input class="input is-rounded is-small" name="pvs_password2" type="password" id="pvs_password" size="40">
+              </tr>
+              <td>Escolaridad:</td>
+                <td><label for="slc_escolaridad"></label>
+                  <select class="select is-primary" name="slc_escolaridad" id="slc_escolaridad">
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Bachillerato">Bachillerato</option>
+                    <option value="Licenciatura">Licenciatura</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Estado:</td>
+                <td><label for="slc_estado"></label>
+                  <select class="select is-primary" name="slc_estado" id="slc_estado">
+                    <option value="EDOMEX">EDOMEX</option>
+                    <option value="CDMX">CDMX</option>
+                    <option value="MORELOS">MORELOS</option>
+                    <option value="PUEBLA">PUEBLA</option>
+                    <option value="OTRO">OTRO</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td height="38">Fecha de nacimiento:</td>
+                <td><input type="date" name="dt_fecNac" id="dt_fecNac" value="fecha"></td>
+              </tr>
+              <tr>
+                <td>Sexo:</td>
+                <td><input type="radio" name="rb_sexo" id="rb_sexo" value="Femenino">
+                <label for="rb_sexo"></label>
+                Femenino  <input type="radio" name="rb_sexo" id="rb_sexo" value="Masculino">
+                <label for="rb_sexo"></label>
+                Masculino</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td><div align="right">
+                    <input type="submit" class="button is-success is-rounded" name="btn" id="btn" value="Enviar" />
+                </div></td>
+              </tr>
+            </table>
+          </div>
+            
+        </form>
+        <script >
+      (function(){
+        var formulario = document.getElementsByName('form')[0],
+        elementos = formulario.elements;
+        boton = document.getElementById('btn');
+
+        validarUsuario = function(e){
+          if(formulario.txt_usuario.value==""){
+            alert("El campo Usuario esta vacio");
+            e.preventDefault();
+          }
+        };
+
+        validarNombre = function(e){
+          if(formulario.txt_nombre.value==""){
+            alert("El campo Nombre esta vacio");
+            e.preventDefault();
+          }
+        };
+
+        validarApellido = function(e){
+          if(formulario.txt_apePat.value==""){
+            alert("El campo Apellido esta vacio");
+            e.preventDefault();
+          }
+        };
+
+        validarContra = function(e){
+           cont1 = formulario.pvs_password1.value
+           cont2 = formulario.pvs_password2.value
+
+          if(cont1 == cont2){
+
+          }else if(cont1 != cont2){
+            alert("Las contraseñas con coinciden");
+            e.preventDefault();
+          }else{
+            alert("Falta el campo Contraseña");
+            e.preventDefault();
+          }
+        };
+
+        /**validarEstado = function(e){
+          if(formulario.slc_estado.value==""){
+            alert("El campo Estado esta vacio");
+            e.preventDefault();
+          }
+        };*/
+        
+        validarFechNa = function(e){
+          if(formulario.dt_fecNac.value==""){
+            alert("Falta seleccionar el campo Fecha de Nacimiento");
+            e.preventDefault();
+          }
+        };
+
+        validarSexo = function(e){
+          if(formulario.rb_sexo[0].checked==true||formulario.rb_sexo[1].checked==true){
+
+          }else{
+            alert("Falta seleccionar un Sexo");
+            e.preventDefault();
+          }
+        };
+
+        var validar = function(e){
+          validarUsuario(e);
+          validarNombre(e);
+          validarApellido(e);
+          validarContra(e);
+          validarEstado(e);
+          validarFechNa(e);
+          validarSexo(e);
+        };
+        formulario.addEventListener("submit",validar)
+      }())
+    </script>
+    </body>
+</html>

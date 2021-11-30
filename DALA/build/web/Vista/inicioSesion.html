@@ -1,0 +1,76 @@
+<html style="background-color: #FF7812;">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Inicio de Sesion</title>
+  <link href="../css/bulma.css" rel="stylesheet" type="text/css"/>
+  <link rel="shortcut icon" type="imagen/x-icon" href="../img/Logo_DALA.png">
+</head>
+<body>
+  <form id="form" name="form" method="post" action="inicioSesion.php">
+    <header>
+      <div align="center">
+        <br><br>
+        <h1 class ="title is-1">Inicio de Sesion</h1>
+        <br><br>
+      </div>
+    </header>
+    <div align="center">
+      <table width="200" border="0">
+          <tr>
+        <td>Usuario:</td>
+        <td><div align="center">
+          <label for="txt_usuario"></label>
+          <input class="input is-rounded is-small" type="text" name="txt_usuario" id="txt_usuario" />
+        </div></td>
+      </tr>
+      <tr>
+        <td>Contraseña:</td>
+        <td><input class="input is-rounded is-small" type="password" name="cp_contraseña" id="cp_contraseña" /></td>
+      </tr>
+      <tr>
+          <td>&nbsp;</td>
+          <td><div align="right">
+              <input type="submit" class="button is-success is-rounded" name="btn" id="btn" value="Enviar" />
+          </div></td>
+        </tr>
+    </table>
+  </div>
+</form>
+<script>
+  (function(){
+        var formulario = document.getElementsByName('form')[0],
+        elementos = formulario.elements;
+        boton = document.getElementById('btn');
+
+        validarUsuario = function(e){
+          if(formulario.txt_usuario.value==""){
+            alert("El campo Usuario esta vacio");
+            e.preventDefault();
+          }
+        };
+
+        /**validarContra = function(e){
+           cont1 = formulario.pvs_password1.value
+           cont2 = formulario.pvs_password2.value
+
+          if(cont1 == cont2){
+
+          }else if(cont1 != cont2){
+            alert("Las contraseñas con coinciden");
+            e.preventDefault();
+          }else{
+            alert("Falta el campo Contraseña");
+            e.preventDefault();
+          }
+        };*/
+
+
+        var validar = function(e){
+          validarUsuario(e);
+          validarContra(e);
+        };
+        formulario.addEventListener("submit",validar)
+      }())
+</script>
+</body>
+</html>

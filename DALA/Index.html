@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>DALA</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <link rel="stylesheet" href="Estilos/Estilos.css">
+    <link rel="stylesheet" href="Estilos/fonts.css">
+    <link rel="stylesheet" href="Estilos/bulma.css">
+    <link rel="stylesheet" href="Estilos/img.css">
+    <link rel="shortcut icon" type="imagen/x-icon" href="img/Logo_DALA.png">
+</head>
+
+<body>
+    <header>
+        <div class="dala"
+            style="height: 30%;display: grid;/* grid-template-columns: repeat(3, 1fr); *//* grid-gap: 95px; *//* grid-auto-rows: minmax(65px, auto); */">
+            <div style="grid-column: 0;grid-row: 1;">
+                <img class="avatar4" src="img/Logo_DALA.png" alt="DALA" width="150px" height="150px">
+            </div>
+            <div style="grid-column: 2;grid-row: 1;">
+                <br>
+                <h1 style="text-align: left;">DALA </h1>
+                <h4 style="text-align: left;">Dificultad del Aprendizaje de la Lectoescritura Apoyadas</h4>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Inicio"><span class=""><i class="icon icon-home"></i></span>Inicio</a></li>
+                <li><a href="Vista/InicioSesion.html"><span class=""><i class="icon icon-man-woman"></i></span>Inicio de
+                        Sesion</a></li>
+                <li><a href="Vista/pruebaPreguntas.php"><span class=""><i
+                                class="icon icon-file-text"></i></span>Prueba</a></li>
+                <li><a href="#Nosotros"><span class=""><i class="icon icon-compass"></i></span>Nosotros</a></li>
+                <li><a href="#Servicio"><span class=""><i class="icon icon-compass"></i></span>Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <duv class="container">
+            <div class="content-center">
+                <h1 class="margintop-lg">1 de cada 5 personas</h1>
+                <h3>Tiene dificultades de aprendizaje y de atencion, como dislexia y TDAH</h3>
+            </div>
+        </duv>
+    </section>
+    <header>
+        <div
+            style="display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 10px;grid-auto-rows: minmax(100px, auto);">
+            <div style="grid-column: 1;grid-row: 1;"><a name="Servicio"></a>
+                <img src="img/Logo_DALA.png" alt="QWERTY" width="170px" height="170px">
+            </div>
+            <div style="grid-column: 2;grid-row: 1;">
+                <br><br>
+                <font size=4px;>
+                    <h2 style="text-align: center;">Servicios</h2>
+                </font>
+            </div>
+        </div>
+    </header>
+    <div align="center">
+        <img class="nosotros" src="img/Servi.png" alt="Servicios">
+    </div> <br>
+    </header>
+    <header>
+        <div
+            style="display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 10px;grid-auto-rows: minmax(100px, auto);">
+            <div style="grid-column: 1;grid-row: 1;">
+                <img src="img/Logo_SOLSOFTW.png" alt="QWERTY" width="170px" height="170px">
+            </div>
+            <div style="grid-column: 2;grid-row: 1;">
+                <br><br>
+                <font size=4px;>
+                    <h2 style="text-align: center;"><a name="Nosotros"></a>Quienes somos?</h2>
+                </font>
+            </div>
+        </div>
+    </header>
+    <div align="center">
+        <img class="nosotros" src="img/Nosotros.png" alt="nosotros">
+    </div> <br>
+    <div align="center">
+        <a target="_black" class="button is-success is-rounded" href="../DALA/VistaAdmin/login.html">Administrador</a>
+        <!--<a target="_black" class="button is-success is-rounded" onclick="mostrarAlerta()">Administrador</a>-->
+
+        <!--http://localhost:8080/AvanceRoge/login.jsp-->
+    </div>
+    <div class="sociales">
+        <ul>
+            <li><a target="_black" href="https://www.facebook.com/" class="icon-facebook"></a></li>
+            <li><a target="_black" href="https://twitter.com/login?lang=es" class="icon-twitter"></a></li>
+            <li><a target="_black" href="https://www.google.com.mx/" class="icon-google"></a></li>
+            <li><a target="_black" href="https://www.pinterest.com.mx/" class="icon-pinterest"></a></li>
+            <li><a target="_black" href="https://outlook.live.com/owa/" class="icon-envelop"></a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <script>
+        var myBtn = document.getElementsByClassName("myBtn");
+        var modal = document.getElementsByClassName("viewModal");
+        var span = document.getElementsByClassName("close");
+
+        myBtn[0].onclick = function () {
+            modal[0].style.display = "block";
+        }
+        span[0].onclick = function () {
+            modal[0].style.display = "none";
+        }
+        window.onclick = function (event) {
+            for (var i = 0; i < modal.length; i++) {
+                if (event.target == modal[i]) {
+                    modal[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+        function mostrarAlerta() {
+            alert("Esta función no está disponible aún :)");
+        }
+    </script>
+</body>
+
+</html>

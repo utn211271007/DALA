@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>InicioAdmi</title>
+    <link rel="stylesheet" href="../Estilos/Estilos.css">
+    <link rel="shortcut icon" type="imagen/x-icon" href="../img/Logo_QWERTY.png">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form id="form" name="form" method="post" action="InicioAdmi.php">
+        <header>
+            <div align="center">
+                <br><br>
+                <h1>Inicio de Sesion</h1>
+                <br><br>
+            </div>
+        </header>
+        <div align="center">
+            <table width="200" border="0">
+                <tr>
+                    <td>Usuario:</td>
+                    <td>
+                        <div align="center">
+                            <label for="txt_usuario"></label>
+                            <input type="text" name="txt_usuario" id="txt_usuario" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contraseña:</td>
+                    <td><input type="password" name="pw_contrase" id="pw_contrase" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><span id="sprypassword1">
+                            <label for="pw_contraseña"></label>
+                            <span class="passwordRequiredMsg"></span></span>
+                        <div align="right">
+                            <input type="submit" name="bt_enviar" id="bt_enviar" value="Enviar" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

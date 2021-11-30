@@ -1,0 +1,10 @@
+[29-Nov-2021 14:32:18 America/Chicago] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/utn5prgc/public_html/DALA/Vista/pruebaPreguntas.php on line 28
+[29-Nov-2021 14:32:18 America/Chicago] PHP Warning:  mysqli_set_charset(): Couldn't fetch mysqli in /home2/utn5prgc/public_html/DALA/Vista/pruebaPreguntas.php on line 33
+[29-Nov-2021 22:06:36 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/utn5prgc/public_html/DALA/logica/consulta.php on line 3
+[29-Nov-2021 22:08:12 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/utn5prgc/public_html/DALA/logica/consulta.php on line 3
+[29-Nov-2021 22:10:21 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/utn5prgc/public_html/DALA/logica/consulta.php on line 2
+[29-Nov-2021 22:13:12 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/utn5prgc/public_html/DALA/logica/consulta.php on line 2
+[29-Nov-2021 22:13:23 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/utn5prgc/public_html/DALA/logica/consulta.php on line 2
+[29-Nov-2021 22:14:12 America/Chicago] PHP Warning:  session_start(): Cannot start session when headers already sent in /home2/utn5prgc/public_html/DALA/logica/consulta.php on line 2
+[29-Nov-2021 22:25:09 America/Chicago] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/utn5prgc/public_html/DALA/Vista/pruebaPreguntas.php on line 28
+[29-Nov-2021 22:25:09 America/Chicago] PHP Warning:  mysqli_set_charset(): Couldn't fetch mysqli in /home2/utn5prgc/public_html/DALA/Vista/pruebaPreguntas.php on line 33
